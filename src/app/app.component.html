@@ -1,17 +1,5 @@
 <h1>Тестове завдання</h1>
 <p>Виконав: Остапенко Владислав</p>
 <div class="password-container">
-  <input class="input_password" type="password" [(ngModel)]="password" (input)="checkPasswordStrength()"
-    placeholder="Enter your password">
-  <div class="strength-indicator">
-    <div class="box"
-      [style.background-color]="passwordStrength === 'small' ? 'red' : (passwordStrength === 'empty' ? 'gray' : (passwordStrength === 'weak' ? 'red' : (passwordStrength === 'medium' ? 'yellow' : 'green')))"
-      style="width: 57px; height: 10px;"></div>
-    <div class="box"
-      [style.background-color]="passwordStrength === 'small' ? 'red' : (passwordStrength === 'empty' ? 'gray' : (passwordStrength === 'weak' ? 'gray' : (passwordStrength === 'medium' ? 'yellow' : 'green')))"
-      style="width: 57px; height: 10px;"></div>
-    <div class="box"
-      [style.background-color]="passwordStrength === 'small' ? 'red' : (passwordStrength === 'empty' ? 'gray' : (passwordStrength === 'weak' ? 'gray' : (passwordStrength === 'medium' ? 'gray' : 'green')))"
-      style="width: 57px; height: 10px;"></div>
-  </div>
+  <app-password-input></app-password-input>
 </div>

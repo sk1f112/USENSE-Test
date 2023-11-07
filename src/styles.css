@@ -40,6 +40,18 @@ h1 {
     transition: all ease 0.6s;
 }
 
+.box:not(:last-child){
+    margin-right: 10px;
+}
+app-password-strength{
+    display: flex;
+    justify-content: center;
+}
+
+.box_container{
+    margin-top: 20px;
+}
+
 .input_password {
     width: 230px;
     padding: 10px;
